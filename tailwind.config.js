@@ -14,6 +14,11 @@ module.exports = {
       fontFamily: {
         "primary-font": ["League Spartan", "sans-serif"],
       },
+
+      fontSize: {
+        "big-text-size": "clamp(2.25rem,3.5vw,5rem)",
+        "normal-text-size": "clamp(1rem,.5vw,3rem)",
+      },
     },
   },
   plugins: [],
