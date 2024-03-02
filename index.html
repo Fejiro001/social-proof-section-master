@@ -8,7 +8,7 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="./assets/images/favicon-32x32.png"
     />
 
     <link rel="stylesheet" href="./css/output.css" />
@@ -16,105 +16,141 @@
     <title>Frontend Mentor | Social proof section</title>
   </head>
 
-  <body class="container mx-auto h-screen">
-    <main>
-      <section>
-        <h1>10,000+ of our users love our products.</h1>
-        <p>
-          We only provide great products combined with excellent customer
-          service. See what our satisfied customers are saying about our
-          services.
-        </p>
-      </section>
+  <body class="container mx-auto font-primary-font bg-white">
+    <div class="mobile-bg-images pt-[5.2rem] px-[1.4rem] space-y-4">
+      <main class="grid-layout">
+        <section class="text-center sm:text-start space-y-5 [grid-area:one]">
+          <h1 class="text-dark-magenta font-bold text-4xl/8 px-2">
+            10,000+ of our users love our products.
+          </h1>
+          <p class="text-[1.1rem] text-dark-grayish-magenta font-medium">
+            We only provide great products combined with excellent customer
+            service. See what our satisfied customers are saying about our
+            services.
+          </p>
+        </section>
 
-      <section> 
-        <div>
-          <div>
-            <img src="./assets/images/icon-star.svg" alt="" />
-            <img src="./assets/images/icon-star.svg" alt="" />
-            <img src="./assets/images/icon-star.svg" alt="" />
-            <img src="./assets/images/icon-star.svg" alt="" />
-            <img src="./assets/images/icon-star.svg" alt="" />
-          </div>
-          <p>Rated 5 Stars in Reviews</p>
-        </div>
+        <section class="[grid-area:two]">
+          <div class="grid gap-4 staircase-layout">
+            <div class="rating-alignment">
+              <div class="flex flex-row flex-wrap gap-2">
+                <img src="./assets/images/icon-star.svg" alt="" />
+                <img src="./assets/images/icon-star.svg" alt="" />
+                <img src="./assets/images/icon-star.svg" alt="" />
+                <img src="./assets/images/icon-star.svg" alt="" />
+                <img src="./assets/images/icon-star.svg" alt="" />
+              </div>
+              <p>Rated 5 Stars in Reviews</p>
+            </div>
+            
+            <div class="rating-alignment">
+              <div class="flex flex-row flex-wrap gap-2">
+                <img src="./assets/images/icon-star.svg" alt="" />
+                <img src="./assets/images/icon-star.svg" alt="" />
+                <img src="./assets/images/icon-star.svg" alt="" />
+                <img src="./assets/images/icon-star.svg" alt="" />
+                <img src="./assets/images/icon-star.svg" alt="" />
+              </div>
+              <p>Rated 5 Stars in Report Guru</p>
+            </div>
 
-        <div>
-          <div>
-            <img src="./assets/images/icon-star.svg" alt="" />
-            <img src="./assets/images/icon-star.svg" alt="" />
-            <img src="./assets/images/icon-star.svg" alt="" />
-            <img src="./assets/images/icon-star.svg" alt="" />
-            <img src="./assets/images/icon-star.svg" alt="" />
-          </div>
-          <p>Rated 5 Stars in Report Guru</p>
-        </div>
-
-        <div>
-          <div>
-            <img src="./assets/images/icon-star.svg" alt="" />
-            <img src="./assets/images/icon-star.svg" alt="" />
-            <img src="./assets/images/icon-star.svg" alt="" />
-            <img src="./assets/images/icon-star.svg" alt="" />
-            <img src="./assets/images/icon-star.svg" alt="" />
-          </div>
-          <p>Rated 5 Stars in BestTech</p>
-        </div>
-      </section>
-
-      <section>
-        <article>
-          <div class="">
-            <div><img src="./assets/images/image-colton.webp" alt="" /></div>
-            <div class="">
-              <p>Colton Smith</p>
-              <p>Verified Buyer</p>
+            <div class="rating-alignment">
+              <div class="flex flex-row flex-wrap gap-2">
+                <img src="./assets/images/icon-star.svg" alt="" />
+                <img src="./assets/images/icon-star.svg" alt="" />
+                <img src="./assets/images/icon-star.svg" alt="" />
+                <img src="./assets/images/icon-star.svg" alt="" />
+                <img src="./assets/images/icon-star.svg" alt="" />
+              </div>
+              <p>Rated 5 Stars in BestTech</p>
             </div>
           </div>
-          <p>
-            "We needed the same printed design as the one we had ordered a week
-            prior. Not only did they find the original order, but we also
-            received it in time. Excellent!"
-          </p>
-        </article>
+        </section>
 
-        <article>
-          <div class="">
-            <div><img src="./assets/images/image-irene.webp" alt="" /></div>
-            <div class="">
-              <p>Irene Roberts</p>
-              <p>Verified Buyer</p>
-            </div>
+        <section class="[grid-area:three]">
+          <div class="grid gap-4">
+            <article class="testimonials-alignment">
+              <div class="flex gap-5">
+                <div class="size-10 sm:size-20">
+                  <img
+                    class="aspect-square rounded-full"
+                    src="./assets/images/image-colton.webp"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <p class="text-light-grayish-magenta font-medium">
+                    Colton Smith
+                  </p>
+                  <p class="text-soft-pink font-normal">Verified Buyer</p>
+                </div>
+              </div>
+              <p class="text-light-grayish-magenta">
+                "We needed the same printed design as the one we had ordered a
+                week prior. Not only did they find the original order, but we
+                also received it in time. Excellent!"
+              </p>
+            </article>
+
+            <article class="testimonials-alignment">
+              <div class="flex gap-5">
+                <div class="size-10 sm:size-20">
+                  <img
+                    class="aspect-square rounded-full"
+                    src="./assets/images/image-irene.webp"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <p class="text-light-grayish-magenta font-medium">
+                    Irene Roberts
+                  </p>
+                  <p class="text-soft-pink font-normal">Verified Buyer</p>
+                </div>
+              </div>
+              <p class="text-light-grayish-magenta">
+                "Customer service is always excellent and very quick turn
+                around. Completely delighted with the simplicity of the purchase
+                and the speed of delivery."
+              </p>
+            </article>
+
+            <article class="testimonials-alignment">
+              <div class="flex gap-5">
+                <div class="size-10 sm:size-20">
+                  <img
+                    class="aspect-square rounded-full"
+                    src="./assets/images/image-anne.webp"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <p class="text-light-grayish-magenta font-medium">
+                    Anne Wallace
+                  </p>
+                  <p class="text-soft-pink font-normal">Verified Buyer</p>
+                </div>
+              </div>
+              <p class="text-light-grayish-magenta">
+                "Put an order with this company and can only praise them for the
+                very high standard. Will definitely use them again and recommend
+                them to everyone!"
+              </p>
+            </article>
           </div>
-          <p>
-            "Customer service is always excellent and very quick turn around.
-            Completely delighted with the simplicity of the purchase and the
-            speed of delivery."
-          </p>
-        </article>
+        </section>
+      </main>
 
-        <article>
-          <div class="">
-            <div><img src="./assets/images/image-anne.webp" alt="" /></div>
-            <div class="">
-              <p>Anne Wallace</p>
-              <p>Verified Buyer</p>
-            </div>
-          </div>
-          <p>
-            "Put an order with this company and can only praise them for the
-            very high standard. Will definitely use them again and recommend
-            them to everyone!"
-          </p>
-        </article>
-      </section>
-    </main>
-
-    <footer class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </footer>
+      <footer class="text-center">
+        Challenge by
+        <a
+          class="text-dark-magenta font-bold"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a class="text-dark-magenta font-bold" href="#">Your Name Here</a>.
+      </footer>
+    </div>
   </body>
 </html>

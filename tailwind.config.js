@@ -14,16 +14,6 @@ module.exports = {
       fontFamily: {
         "primary-font": ["League Spartan", "sans-serif"],
       },
-
-      backgroundImage: {
-        "desktop-pattern-top":
-          "url(../assets/images/bg-pattern-top-desktop.svg)",
-        "desktop-pattern-bottom":
-          "url(../assets/images/bg-pattern-bottom-desktop.svg)",
-        "mobile-pattern-top": "url(../assets/images/bg-pattern-top-mobile.svg)",
-        "mobile-pattern-bottom":
-          "url(../assets/images/bg-pattern-bottom-mobile.svg)",
-      },
     },
   },
   plugins: [],

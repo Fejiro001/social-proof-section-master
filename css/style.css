@@ -9,3 +9,51 @@
   font-display: swap;
   font-weight: 400 500 700;
 }
+
+@layer utilities {
+  .mobile-bg-images {
+    background-image: url(../assets/images/bg-pattern-top-mobile.svg),
+      url(../assets/images/bg-pattern-bottom-mobile.svg);
+    background-position: top left, bottom right;
+    background-repeat: no-repeat, no-repeat;
+  }
+  @media (min-width: 375px) {
+    .mobile-bg-images {
+      background-image: url(../assets/images/bg-pattern-top-desktop.svg),
+        url(../assets/images/bg-pattern-bottom-desktop.svg);
+    }
+  }
+
+  .grid-layout {
+    display: grid;
+    @apply gap-9;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "one"
+      "two"
+      "three";
+  }
+  @media (min-width: 1024px) {
+    .grid-layout {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
+        "one two"
+        "three three";
+    }
+  }
+
+  .rating-alignment {
+    @apply bg-light-grayish-magenta rounded-md text-dark-magenta text-center sm:text-start max-w-md gap-[0.8rem] sm:gap-8;
+    font-size: 1.08rem;
+    padding-inline: 2rem;
+    padding-block: .8rem;
+    font-weight: 700;
+    display: flex;
+    justify-items: start;
+    align-items: center;
+  }
+
+  .testimonials-alignment {
+    @apply bg-dark-magenta rounded-md pt-[2.65rem] pb-6 px-[2.25rem] space-y-4 text-base;
+  }
+}
