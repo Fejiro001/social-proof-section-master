@@ -21,7 +21,7 @@
     background-position: top left, bottom right;
     background-repeat: no-repeat, no-repeat;
   }
-  @media (min-width: 375px) {
+  @media (min-width: 376px) {
     .mobile-bg-images {
       background-image: url(../assets/images/bg-pattern-top-desktop.svg),
         url(../assets/images/bg-pattern-bottom-desktop.svg);
